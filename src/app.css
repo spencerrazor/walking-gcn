@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap'); */
+
+:root {
+  --g1: rgb(98, 0, 234);
+  --g2: rgb(236, 64, 122);
+  font-family: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(-45%);
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+body.toggled {
+  animation: none;
+}
+
+body.toggled > #app > .centered > #focus > #title {
+  opacity: 0;
+  /* visibility: hidden; */
+}
+body.toggled > #app > .centered > #focus > div > .learn-more {
+  transition: opacity 1500ms ease;
+  transition-delay: 1s;
+  opacity: 1;
+  pointer-events: all;
+  /* visibility: hidden; */
+}
+
+#reason {
+  opacity: 0;
+  transition: opacity 1500ms ease, font-size 250ms ease;
+  color: black;
+  font-size: 0px;
+}
+
+body.toggled > #app > .centered > p >  #reason {
+  opacity: 1;
+  font-size: 2.25rem;
+  /* visibility: hidden; */
+}
+
+
+body.toggled > #tiles > .tile:hover {
+  opacity: 0.1 !important;
+}
+
+body {
+  min-height: 100vh;
+  animation: background-pan 10s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--g1),
+    var(--g2),
+    var(--g1)
+  );
+  background-size: 200%;
+}
