@@ -39,11 +39,20 @@ body.toggled {
   animation: none;
 }
 
-body.toggled > #app > .centered > #focus > #title {
+body.toggled > #app > div > .centered > #focus > #title {
   opacity: 0;
+  font-size: 0;
   /* visibility: hidden; */
 }
-body.toggled > #app > .centered > #focus > div > .learn-more {
+
+body.toggled > #app > div > .centered > #focus {
+  transition: height 1500ms ease;
+  height: 0px;
+  /* visibility: hidden; */
+}
+
+
+body.toggled > #app > div > .centered > #focus > div > .learn-more {
   transition: opacity 1500ms ease;
   transition-delay: 1s;
   opacity: 1;
@@ -58,9 +67,21 @@ body.toggled > #app > .centered > #focus > div > .learn-more {
   font-size: 0px;
 }
 
-body.toggled > #app > .centered > p >  #reason {
+body.toggled > #app > div > .centered > p >  #reason > span {
   opacity: 1;
-  font-size: 2.25rem;
+  font-size: 1.875rem;
+  /* visibility: hidden; */
+}
+#reason > span {
+  opacity: 0;
+  transition: opacity 1500ms ease, font-size 250ms ease;
+  color: white;
+  font-size: 0px;
+}
+
+body.toggled > #app > div > .centered > p >  #reason {
+  opacity: 1;
+  font-size: 1.875rem;
   /* visibility: hidden; */
 }
 

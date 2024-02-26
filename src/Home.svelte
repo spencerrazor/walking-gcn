@@ -1,15 +1,15 @@
 <script>
-    
+
 </script>
 
-<main class="pb-16 lg:pb-24 bg-gradient-linear antialiased">
-    <header class="w-full h-[460px] xl:h-[537px] bg-no-repeat bg-cover bg-center bg-blend-darken relative">
+<main class="pb-16 lg:pb-24 bg-[rgb(20,20,20)] antialiased">
+    <header class="bg-[url(chip.jpeg)] w-full h-[300px] lg:h-[460px] xl:h-[537px] bg-no-repeat bg-cover bg-center bg-blend-darken relative">
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
         <div class="absolute top-20 left-1/2 px-4 mx-auto w-full max-w-screen-xl -translate-x-1/2 xl:top-1/2 xl:-translate-y-1/2 xl:px-0">
-            <h1 class="mb-4 max-w-4xl text-4xl font-extrabold leading-none text-white lg:text-6xl text-center md:text-left">Walking GCN - An improvement to existing machine learning models.</h1>
+            <h1 class="mb-4 text-4xl font-extrabold leading-none text-white lg:text-6xl text-left lg:text-center md:text-left">Walking GCN - Keeping connections alive with smart batching</h1>
         </div>
     </header>
-    <div class="flex relative z-20 justify-between p-6 lg-m-36 mx-0 md:mx-4 max-w-screen-xl bg-[rgb(20,20,20)] rounded xl:-m-32 xl:p-9 xl:mx-auto">
+    <div class="bg-[url(/dragon-scales.svg)] bg-[200%] flex relative z-20 justify-between p-6 lg-m-36 mx-0 md:mx-4 max-w-screen-xl bg-[rgb(20,20,20)] rounded xl:-m-32 xl:p-9 xl:mx-auto">
         <article class="text-white xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
         <h2 class="text-bold text-4xl mb-4">Introduction</h2>
         <p class="lead text-lg mb-4">
@@ -52,7 +52,7 @@
                 </a>
                 . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
             </p>
-            <h2 class="text-bold text-4xl mb-4">Introduction</h2>
+            <h2 class="text-bold text-3xl mb-4">The Congestion Problem</h2>
             <p class="lead text-lg mb-4 ">
                 <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
                     Netlist sub-graph partitioning
@@ -69,7 +69,110 @@
                 </a>
                 . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
             </p>
-            <h2 class="text-bold text-4xl mb-4">Introduction</h2>
+            <h2 class="text-bold text-3xl mb-4">Our Method</h2>
+            <h2 class="text-bold text-xl mb-4">Data</h2>
+            <p class="lead text-lg mb-4 ">
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Netlist sub-graph partitioning
+                </a>
+                optimizes the efficiency of the VLSI (Very Large Scale Integration) Design flow. We propose a model to reduce compute costs and speed up training times on congestion prediction models by using Graph Neural Networks (GNNs) to learn an efficient partitioning strategy.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                Our goal is to identify clusters which can pre-process net-list data and be easily fed to downstream congestion model. We compare our GNN’s self-learning model to several partitioning algorithms as a baseline.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                We base our model off of 
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Cluster GCN
+                </a>
+                . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
+            </p>
+            <h2 class="text-bold text-xl mb-4">Preprocessing</h2>
+            <p class="lead text-lg mb-4 ">
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Netlist sub-graph partitioning
+                </a>
+                optimizes the efficiency of the VLSI (Very Large Scale Integration) Design flow. We propose a model to reduce compute costs and speed up training times on congestion prediction models by using Graph Neural Networks (GNNs) to learn an efficient partitioning strategy.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                Our goal is to identify clusters which can pre-process net-list data and be easily fed to downstream congestion model. We compare our GNN’s self-learning model to several partitioning algorithms as a baseline.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                We base our model off of 
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Cluster GCN
+                </a>
+                . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
+            </p>
+            <h2 class="text-bold text-xl mb-4">Batching</h2>
+            <p class="lead text-lg mb-4 ">
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Netlist sub-graph partitioning
+                </a>
+                optimizes the efficiency of the VLSI (Very Large Scale Integration) Design flow. We propose a model to reduce compute costs and speed up training times on congestion prediction models by using Graph Neural Networks (GNNs) to learn an efficient partitioning strategy.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                Our goal is to identify clusters which can pre-process net-list data and be easily fed to downstream congestion model. We compare our GNN’s self-learning model to several partitioning algorithms as a baseline.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                We base our model off of 
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Cluster GCN
+                </a>
+                . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
+            </p>
+            <h2 class="text-bold text-xl mb-4">Model</h2>
+            <p class="lead text-lg mb-4 ">
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Netlist sub-graph partitioning
+                </a>
+                optimizes the efficiency of the VLSI (Very Large Scale Integration) Design flow. We propose a model to reduce compute costs and speed up training times on congestion prediction models by using Graph Neural Networks (GNNs) to learn an efficient partitioning strategy.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                Our goal is to identify clusters which can pre-process net-list data and be easily fed to downstream congestion model. We compare our GNN’s self-learning model to several partitioning algorithms as a baseline.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                We base our model off of 
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Cluster GCN
+                </a>
+                . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
+            </p>
+            <h2 class="text-bold text-xl mb-4">Evaluation</h2>
+            <p class="lead text-lg mb-4 ">
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Netlist sub-graph partitioning
+                </a>
+                optimizes the efficiency of the VLSI (Very Large Scale Integration) Design flow. We propose a model to reduce compute costs and speed up training times on congestion prediction models by using Graph Neural Networks (GNNs) to learn an efficient partitioning strategy.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                Our goal is to identify clusters which can pre-process net-list data and be easily fed to downstream congestion model. We compare our GNN’s self-learning model to several partitioning algorithms as a baseline.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                We base our model off of 
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Cluster GCN
+                </a>
+                . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
+            </p>
+            <h2 class="text-bold text-3xl mb-4">Results</h2>
+            <p class="lead text-lg mb-4 ">
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Netlist sub-graph partitioning
+                </a>
+                optimizes the efficiency of the VLSI (Very Large Scale Integration) Design flow. We propose a model to reduce compute costs and speed up training times on congestion prediction models by using Graph Neural Networks (GNNs) to learn an efficient partitioning strategy.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                Our goal is to identify clusters which can pre-process net-list data and be easily fed to downstream congestion model. We compare our GNN’s self-learning model to several partitioning algorithms as a baseline.
+            </p>
+            <p class="lead text-lg mb-4 ">
+                We base our model off of 
+                <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
+                    Cluster GCN
+                </a>
+                . Netlist partitioning has been a major focus to address the increasing complexity of circuits as explained by Moore’s Law. While shallow and heuristic methods have been the focus of much research on partitioning, the applications of deep learning have been less explored.
+            </p>
+            <h2 class="text-bold text-3xl mb-4">Conclusion</h2>
             <p class="lead text-lg mb-4 ">
                 <a href="#" style="text-decoration: underline; color: rgba(0, 212, 255, 1);">
                     Netlist sub-graph partitioning
@@ -91,116 +194,111 @@
             <div class="xl:w-[336px] sticky top-6">
                 <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
                 <div class="mb-8">
-                    <h4 class="mb-2 text-sm font-bold text-white uppercase">Flowbite News morning headlines</h4>
-                    <p class="mb-4 text-sm text-gray-300">Get all the stories you need-to-know from the most powerful name in news delivered first thing every morning to your inbox</p>
+                    <h4 class="mb-2 text-sm font-bold text-white uppercase">Questions to Think About</h4>
+                    <p class="mb-4 text-md text-gray-300">Why might it be good to predict congestion in a chip design?</p>
+                    <p class="mb-4 text-md text-gray-300">Why might it be good to predict congestion in a chip design?</p>
                 </div>
                 <div class="mb-12">
-                    <h4 class="mb-4 text-sm font-bold text-white uppercase">Latest news</h4>
-                    <div class="mb-6 flex items-center">
-                        <a href="#" class="shrink-0">
-                        </a>
+                    <h4 class="mb-4 text-sm font-bold text-white uppercase">Common Definitions</h4>
+                    <div class="mb-6 flex items-center bg-[rgb(20,20,20)] p-4 rounded-lg">
                         <div>
-                            <h5 class="mb-2 text-lg font-bold leading-tight text-white">Our first office</h5>
+                            <h5 class="mb-2 text-lg font-bold leading-tight text-white ">Netlist</h5>
                             <p class="mb-2 text-gray-300">Over the past year, Volosoft has undergone changes.</p>
-                            <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                                Read in 9 minutes
+                            <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-[#00D4FF] hover:no-underline">
+                                See Detailed
                             </a>
                         </div>
                     </div>
-                    <div class="mb-6 flex items-center">
-                        <a href="#" class="shrink-0">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png" class="mr-4 max-w-full w-24 h-24 rounded-lg" alt="Image 2">
-                        </a>
+                    <div class="mb-6 flex items-center bg-gray-600 p-4 rounded-lg">
                         <div>
-                            <h5 class="mb-2 text-lg font-bold leading-tight dark:text-white text-gray-900">Enterprise Design tips</h5>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone changes.</p>
-                            <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                                Read in 14 minutes
+                            <h5 class="mb-2 text-lg font-bold leading-tight text-white ">Netlist</h5>
+                            <p class="mb-2 text-gray-300">Over the past year, Volosoft has undergone changes.</p>
+                            <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-[#00D4FF] hover:no-underline">
+                                See Detailed
                             </a>
                         </div>
                     </div>
-                    <div class="mb-6 flex items-center">
-                        <a href="#" class="shrink-0">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-3.png" class="mr-4 max-w-full w-24 h-24 rounded-lg" alt="Image 3">
-                        </a>
-                        <div>
-                            <h5 class="mb-2 text-lg font-bold leading-tight dark:text-white text-gray-900">Partnered up with Google</h5>
-                            <p class="mb-2 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has undergone changes.</p>
-                            <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                                Read in 9 minutes
-                            </a>
-                        </div>
+                </div>
+                <div class="mb-8">
+                    <h4 class="mb-2 text-sm font-bold text-white uppercase">Supplmental Video</h4>
+
+                    <div class="flex gap-2">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M21.7 8c0-.7-.4-1.3-.8-2-.5-.5-1.2-.8-2-.8C16.2 5 12 5 12 5s-4.2 0-7 .2c-.7 0-1.4.3-2 .9-.3.6-.6 1.2-.7 2l-.2 3.1v1.5c0 1.1 0 2.2.2 3.3 0 .7.4 1.3.8 2 .6.5 1.4.8 2.2.8l6.7.2s4.2 0 7-.2c.7 0 1.4-.3 2-.9.3-.5.6-1.2.7-2l.2-3.1v-1.6c0-1 0-2.1-.2-3.2ZM10 14.6V9l5.4 2.8-5.4 2.8Z" clip-rule="evenodd"/>
+                        </svg>
+                        <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-[#00D4FF] hover:no-underline">Learn about Cluster GCN via Stanford</a>
                     </div>
+
+                      
                 </div>
                 <div>   
                     <a href="#" class="flex justify-center items-center mb-3 w-full h-48 bg-gray-100 rounded-lg dark:bg-gray-700">
                         <svg aria-hidden="true" class="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg>
                     </a>
-                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">Students and Teachers, save up to 60% on Flowbite Creative Cloud.</p>
-                    <p class="text-xs text-gray-400 uppercase dark:text-gray-500">Ads placeholder</p>
+                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">Students and Teachers, solving billion dollar research problems</p>
                 </div>
             </div>
         </aside>
     </div>
     </main>
 
-    <aside aria-label="Related articles" class="py-8 lg:py-24 bg-gradient-linear">
-    <div class="px-4 mx-auto max-w-screen-xl">
-        <h2 class="mb-6 lg:mb-8 text-2xl font-bold text-white">Our Sources</h2>
+    <aside aria-label="Related articles" class="py-8 lg:py-24 bg-[rgb(20,20,20)]">
+    <div class="px-8 lg:px-4 mx-auto max-w-screen-xl">
+        <h2 class="mb-6 lg:mb-8 text-2xl font-bold text-white">References</h2>
         <div class="grid gap-6 lg:gap-12 md:grid-cols-2">
             <article class="flex flex-col xl:flex-row">
-                <a href="#" class="mb-2 xl:mb-0">
+                <a href="https://arxiv.org/abs/1905.07953" class="mb-2 xl:mb-0">
                     <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" class="mr-5 max-w-sm" alt="Image 1">
                 </a>
                 <div class="flex flex-col justify-center">
                     <h2 class="mb-2 text-xl font-bold leading-tight text-white">
-                        <a href="#">Cluster-GCN</a>
+                        <a href="https://arxiv.org/abs/1905.07953">Cluster-GCN</a>
                     </h2>
-                    <p class="mb-4 text-gray-300 max-w-sm">A batching </p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                    <p class="mb-4 text-gray-300 max-w-sm text-xl">A batching strategy that clusters based off community detection algorithms and smart batching techniques.</p>
+                    <a href="https://arxiv.org/abs/1905.07953" class="inline-flex items-center font-medium underline underline-offset-4 text-[#00D4FF] hover:no-underline">
                         Read in 2 minutes
                     </a>
                 </div>
             </article>
             <article class="flex flex-col xl:flex-row">
-                <a href="#" class="mb-2 xl:mb-0">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" class="mr-5 max-w-sm" alt="Image 2">
+                <a href="https://arxiv.org/abs/1905.07953" class="mb-2 xl:mb-0">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" class="mr-5 max-w-sm" alt="Image 1">
                 </a>
                 <div class="flex flex-col justify-center">
-                    <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                        <a href="#">Enterprise design tips</a>
+                    <h2 class="mb-2 text-xl font-bold leading-tight text-white">
+                        <a href="https://arxiv.org/abs/1905.07953">Cluster-GCN</a>
                     </h2>
-                    <p class="mb-4 text-gray-500 dark:text-gray-400 max-w-sm">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 12 minutes
+                    <p class="mb-4 text-gray-300 max-w-sm text-xl">A batching strategy that clusters based off community detection algorithms and smart batching techniques.</p>
+                    <a href="https://arxiv.org/abs/1905.07953" class="inline-flex items-center font-medium underline underline-offset-4 text-[#00D4FF] hover:no-underline">
+                        Read in 2 minutes
                     </a>
                 </div>
             </article>
             <article class="flex flex-col xl:flex-row">
-                <a href="#" class="mb-2 xl:mb-0">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" class="mr-5 max-w-sm" alt="Image 3">
+                <a href="https://arxiv.org/abs/1905.07953" class="mb-2 xl:mb-0">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" class="mr-5 max-w-sm" alt="Image 1">
                 </a>
                 <div class="flex flex-col justify-center">
-                    <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                        <a href="#">We partnered up with Google</a>
+                    <h2 class="mb-2 text-xl font-bold leading-tight text-white">
+                        <a href="https://arxiv.org/abs/1905.07953">Cluster-GCN</a>
                     </h2>
-                    <p class="mb-4 text-gray-500 dark:text-gray-400 max-w-sm">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 8 minutes
+                    <p class="mb-4 text-gray-300 max-w-sm text-xl">A batching strategy that clusters based off community detection algorithms and smart batching techniques.</p>
+                    <a href="https://arxiv.org/abs/1905.07953" class="inline-flex items-center font-medium underline underline-offset-4 text-[#00D4FF] hover:no-underline">
+                        Read in 2 minutes
                     </a>
                 </div>
             </article>
             <article class="flex flex-col xl:flex-row">
-                <a href="#" class="mb-2 xl:mb-0">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" class="mr-5 max-w-sm" alt="Image 4">
+                <a href="https://arxiv.org/abs/1905.07953" class="mb-2 xl:mb-0">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" class="mr-5 max-w-sm" alt="Image 1">
                 </a>
                 <div class="flex flex-col justify-center">
-                    <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                        <a href="#">Our first project with React</a>
+                    <h2 class="mb-2 text-xl font-bold leading-tight text-white">
+                        <a href="https://arxiv.org/abs/1905.07953">Cluster-GCN</a>
                     </h2>
-                    <p class="mb-4 text-gray-500 dark:text-gray-400 max-w-sm">Over the past year, Volosoft has undergone many changes! After months of preparation.</p>
-                    <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
-                        Read in 12 minutes
+                    <p class="mb-4 text-gray-300 max-w-sm text-xl">A batching strategy that clusters based off community detection algorithms and smart batching techniques.</p>
+                    <a href="https://arxiv.org/abs/1905.07953" class="inline-flex items-center font-medium underline underline-offset-4 text-[#00D4FF] hover:no-underline">
+                        Read in 2 minutes
                     </a>
                 </div>
             </article>
@@ -208,43 +306,258 @@
     </div>
     </aside>
 
-    <section class="bg-gray-50 dark:bg-gray-800">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-md sm:text-center">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Our Team</h2>
-            <p class="mx-auto mb-8 max-w-2xl text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
-            <form action="#">
-                <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
-                    <div class="relative w-full">
-                        <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
-                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-                                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-                            </svg>
-                        </div>
-                        <input class="block p-3 pl-9 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email"/>
+    <section class="bg-white">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Frequently asked questions</h2>
+            <div class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
+                <div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            Why can't we just randomly split the graph into multiple batches?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">You might have been in a classroom where you sat next to your friends, and the teacher randomly assigned you groups instead of grouping you with your friends. You might have thought that working with your friends is much easier. Well, this is the same in large graph networks. Tighter communities adapt well with each other and have more in common within a large graph networks, which is why we have to be more careful when we split our graph.</p>
                     </div>
-                    <div>
-                        <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
-                    </div> 
+                    <div class="mb-10">                        
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            What was the biggest roadblock you guys had?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">Once you have purchased either the design, code, or both packages, you will have access to all of the future updates based on the roadmap, free of charge.</p>
+                    </div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            How can I run the same experiments that you did?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">We're aware of the importance of well qualified support, that is why we decided that support will only be provided by the authors that actually worked on this project.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Feel free to <a href="#" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline" target="_blank" rel="noreferrer">contact us</a> and we'll help you out as soon as we can.</p>
+                    </div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            I want to build more than one project. Is that allowed?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">You can use Windster for an unlimited amount of projects, whether it's a personal website, a SaaS app, or a website for a client. As long as you don't build a product that will directly compete with Windster either as a UI kit, theme, or template, it's fine.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Find out more information by <a href="#" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
+                    </div>
                 </div>
-                <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
-            </form>
+                <div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            What was your tech stack?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">We used Python and common deep learning and graph manipulation libraries, including PyTorch, PyTorch Geometric, and Networkx. For the front-end, we used Svelte and Tailwind CSS.</p>
+                    </div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            Do you guys have socials?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">The <a href="#" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">free version</a> of Windster includes a minimal style guidelines, component variants, and a dashboard page with the mobile version alongside it.</p>
+                        <p class="text-gray-500 dark:text-gray-400">You can use this version for any purposes, because it is open-source under the MIT license.</p>
+                    </div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            What improvements can you make to your research?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">Although both Windster and Tailwind UI are built for integration with Tailwind CSS, the main difference is in the design, the pages, the extra components and UI elements that Windster includes.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Additionally, Windster is a project that is still in development, and later it will include both the application, marketing, and e-commerce UI interfaces.</p>
+                    </div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            What is the future of this area of research?
+                        </h3>
+                        <p class="text-gray-500 dark:text-gray-400">Generally, it is accepted to use Windster in open-source projects, as long as it is not a UI library, a theme, a template, a page-builder that would be considered as an alternative to Windster itself.</p>
+                        <p class="text-gray-500 dark:text-gray-400">With that being said, feel free to use this design kit for your open-source projects.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Find out more information by <a href="#" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">reading the license</a>.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </section>
+      </section>
+
+    <section class="bg-gray-200 dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+            <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16 flex flex-col items-center">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Meet the Squad</h2>
+                <p class="mb-4 font-light text-gray-500 sm:text-xl">Thank you to all the mentors part of our project 👏</p>
+                <ul class="text-gray-500 list-inside flex flex-col lg:flex-row gap-2 lg:gap-4">
+                    <a href="https://linkedin.com/in/lindsey-kostas-a95115105" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                        <li class="flex items-center justify-left gap-2 bg-white p-2 rounded-lg shadow-lg">
+                            <img class="w-10 h-10 rounded-full object-cover" src="https://media.licdn.com/dms/image/C5603AQEcz9nkbN6eGg/profile-displayphoto-shrink_200_200/0/1517251687831?e=2147483647&v=beta&t=1AWW-p2ubRmo1s1xFIG97XGA6Gpy0WfP2JTojJgcgow" alt="Rounded avatar">
+                            <p>
+                                Lindsey Kostas
+                            </p>
+                            <svg class="w-6 h-6 text-[#0077B5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+                                <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+                            </svg>   
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/onur-atan-07598949" class="hover:scale-110 text-black">
+                        <li class="flex items-center justify-left gap-2 bg-white p-2 rounded-lg shadow-lg">
+                            <img class="w-10 h-10 rounded-full object-cover" src="https://media.licdn.com/dms/image/C5603AQEYIKSuxEWSiQ/profile-displayphoto-shrink_200_200/0/1537164855985?e=2147483647&v=beta&t=KYZ_wn96EHVzkauGF4J2M2Cg5mdo8RflgJpVAejel-U" alt="Rounded avatar">
+                            <p>
+                                Onur Atan
+                            </p>
+                            <svg class="w-6 h-6 text-[#0077B5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+                                <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+                            </svg>   
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhimnsen" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                        <li class="flex items-center justify-left gap-2 bg-white p-2 rounded-lg shadow-lg">
+                            <img class="w-10 h-10 rounded-full object-cover" src="https://media.licdn.com/dms/image/C5603AQGoWmGiAD0L2A/profile-displayphoto-shrink_200_200/0/1516784314606?e=2147483647&v=beta&t=_x4GX2mlZirgwPofDR2OZp_TOxjVNYb_PWQzFnZwuoA" alt="Rounded avatar">
+                            <p>
+                                Dhiman Sengupta
+                            </p>
+                            <svg class="w-6 h-6 text-[#0077B5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+                                <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+                            </svg>   
+                        </li>
+                    </a>
+                </ul>
+            </div> 
+            <div class="w-full grid gap-8 lg:gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class="bg-white shadow-xl py-4 rounded-lg text-center text-gray-500">
+                    <img class="shadow-xl mx-auto mb-4 w-36 h-36 rounded-full object-cover" src="srujan.png" alt="Bonnie Avatar">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900">
+                        <a href="#">Srujan Gutta</a>
+                    </h3>
+                    <p>Lead Model Engineer</p>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="#" class="text-[#39569c] hover:text-gray-900">
+                                <svg class="w-6 h-6 text-[#00D4FF]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.2 9.8a3.4 3.4 0 0 0-4.8 0L5 13.2A3.4 3.4 0 0 0 9.8 18l.3-.3m-.3-4.5a3.4 3.4 0 0 0 4.8 0L18 9.8A3.4 3.4 0 0 0 13.2 5l-1 1"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6 text-[#0077B5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+                                    <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+                                  </svg>  
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow-xl py-4 rounded-lg text-center text-gray-500">
+                    <img class="shadow-xl mx-auto mb-4 w-36 h-36 rounded-full object-cover" src="spencer.png" alt="Helene Avatar">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Spencer Wueste</a>
+                    </h3>
+                    <p>Front-end / Model Pipeline</p>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6 text-[#00D4FF]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.2 9.8a3.4 3.4 0 0 0-4.8 0L5 13.2A3.4 3.4 0 0 0 9.8 18l.3-.3m-.3-4.5a3.4 3.4 0 0 0 4.8 0L18 9.8A3.4 3.4 0 0 0 13.2 5l-1 1"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6 text-[#0077B5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+                                    <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+                                  </svg>   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow-xl py-4 rounded-lg text-center text-gray-500">
+                    <img class="shadow-xl object-cover mx-auto mb-4 w-36 h-36 rounded-full" src="james.png" alt="Jese Avatar">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">James Bentley</a>
+                    </h3>
+                    <p>Data Analyst / Data Augmentation</p>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6 text-[#00D4FF]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.2 9.8a3.4 3.4 0 0 0-4.8 0L5 13.2A3.4 3.4 0 0 0 9.8 18l.3-.3m-.3-4.5a3.4 3.4 0 0 0 4.8 0L18 9.8A3.4 3.4 0 0 0 13.2 5l-1 1"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6 text-[#0077B5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+                                    <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+                                  </svg>  
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow-xl py-4 rounded-lg text-center text-gray-500">
+                    <img class="shadow-xl mx-auto mb-4 w-36 h-36 rounded-full object-cover" src="tommy.png" alt="Joseph Avatar">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Tommy Shen</a>
+                    </h3>
+                    <p>Data Analyst / Data Augmentation</p>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6 text-[#00D4FF]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.2 9.8a3.4 3.4 0 0 0-4.8 0L5 13.2A3.4 3.4 0 0 0 9.8 18l.3-.3m-.3-4.5a3.4 3.4 0 0 0 4.8 0L18 9.8A3.4 3.4 0 0 0 13.2 5l-1 1"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6 text-[#0077B5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+                                    <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+                                  </svg>  
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+      </section>
 
     <footer class="bg-[rgb(20,20,20)] antialiased">
     <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
         <div class="text-center">
-            <a href="#" class="flex justify-center items-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
-                <svg class="mr-2 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <a href="#" class="flex justify-center items-center mb-5 text-2xl font-semibold text-white">
+                <svg class="mr-2 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8v8m0-8h8M8 8H6a2 2 0 1 1 2-2v2Zm0 8h8m-8 0H6a2 2 0 1 0 2 2v-2Zm8 0V8m0 8h2a2 2 0 1 1-2 2v-2Zm0-8h2a2 2 0 1 0-2-2v2Z"/>
                   </svg>
                 Walking GCN    
             </a>
-            <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2023-2024 <a href="#" class="hover:underline">UC San Diego | Qualcomm</a>. All Rights Reserved.
+            <span class="block text-sm text-center text-gray-300">© 2023-2024 <a href="#" class="hover:underline">UC San Diego | Qualcomm</a>. All Rights Reserved.
             </span>
     </div>
     </footer>

@@ -44,27 +44,50 @@
   
     let count = -1;
     let toggled = false
+    let nextPage = 0
+
+    setInterval(() => {
+      
+    })
   
     const handleTileClick = index => {
-      toggled = !toggled
-      document.body.classList.toggle("toggled");
-  
       count += 1
+      // anime({
+      //   targets: ".tile",
+      //   // opacity: toggled ? 0 : 1,
+      //   backgroundColor: colors[count % (colors.length - 1)],
+      //   delay: anime.stagger(50, {
+      //     grid: [columns, rows],
+      //     from: index
+      //   }),
+      // })
       anime({
-        targets: ".tile",
-        opacity: toggled ? 0 : 1,
-        delay: anime.stagger(50, {
-          grid: [columns, rows],
-          from: index
-        }),
+        targets: ".next",
+        // opacity: toggled ? 0 : 1,
+        backgroundColor: colors[count % (colors.length - 1)],
       })
     }
 
-    let nextPage = false
 
     const handleLearnMore = e => {
-        // console.log()
-        dispatch('nextPage', !nextPage)
+      document.getElementById('title').style.visibility = 'hidden'
+      
+      if (nextPage == 0) {
+        toggled = !toggled
+        document.body.classList.toggle("toggled");
+        nextPage += 1
+        anime({
+          targets: ".tile",
+          opacity: toggled ? 0 : 1,
+          delay: anime.stagger(50, {
+            grid: [columns, rows],
+            from: (columns * rows) - 3 * columns
+          })
+        })
+      } else {
+        dispatch('nextPage', nextPage)
+      }
+
     }
   
   </script>
@@ -81,15 +104,12 @@
       <h1 id="title" class="text-left w-3/4 text-6xl">
         Walking GCN
       </h1>
-      <div class="">
-        <button class="learn-more bg-white w-3/4 left-1/2 lg:left-1/4 lg:w-1/4 text-2xl" on:click={handleLearnMore}>Learn More</button>
-      </div>
     </div>
-    <p id="slogan" class="text-left text-4xl w-3/4 mx-auto">Taking better steps to optimize chip design
-      <span id="reason" class="block">by speeding up training on large graph neural networks models that predict key design metrics</span>
+    <p id="slogan" class="text-left text-3xl lg:text-4xl w-3/4 mx-auto">Taking better steps to optimize chip design
+      <span id="reason" class="block">by speeding up training on large graph neural networks that predict key chip design metrics. <span class="text-white">Explore our solution of efficient batching techniques on large graphs!</span></span>
     </p>
     <div class="w-3/4 mx-auto my-8">
-      <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+      <button on:click={handleLearnMore} class="next relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
         <svg class="w-12 h-12 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
         </svg>
@@ -169,6 +189,24 @@
     box-shadow: 2px 2px 3px;
     transform: translate(-50%, -50%) scale(1.05);
   }
+
+
+  .next {
+    pointer-events: all;
+    background: linear-gradient(90deg, purple, red, purple);
+    background-size: 400% 100%;
+    animation: gradient 20s ease-in-out infinite;
+  }
+
+  @keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 400% 0%;
+  }
+}
+
 
   
   </style>
